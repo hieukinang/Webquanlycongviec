@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="/Login.css" />   
+  </head>
+  <body>
+    <div id="head">
+        <a href="Base.html">
+            <img src="./hinhanhTTCS/logo.png" alt="home">
+        </a>
+    </div>
+    <div id="content">
+        <div id="login" class="background">
+          <h1>Đăng nhập</h1>
+          <div id="name">
+              <h3>Tài khoản</h3>
+              <input type="text" placeholder="Tên đăng nhập" id="yourname">
+          </div>
+          <div id="pass">
+              <h3>Mật khẩu</h3>
+              <input type="password" placeholder="Mật khẩu">
+              <p id="quenmk"><a href="laylaimatkhau.html">Quên mật khẩu</a></p>
+          </div>
+          <div id="submit">
+              <button type="submit" id="sub" onclick="sub()"><a href="/Base.html">Đăng nhập</a></button>
+              <div id="op3"><div id="linex"></div><p id="line1">Chọn phương thức đăng nhập khác</p><div id="linex"></div></div>
+              <div id="icon">
+                <img src="./hinhanhTTCS/facebook.png">
+                <img src="./hinhanhTTCS/gmailicon.png">
+              </div>
+              <div id="line2"></div>
+              <p id="Signup">Bạn chưa có tài khoản?<a href="Signup.html">Đăng ký ngay</a></p>
+          </div>
+        </div>
+        <img src="./hinhanhTTCS/check.png" atl="login" id="imgcheck">
+      </div>
+  </body>
+  <script src="/Base.js"></script>
+</html>

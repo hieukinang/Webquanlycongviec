@@ -1,0 +1,96 @@
+body{
+    color: #916434;
+    background-color: #AF8F6F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+h4{
+    margin-left: 5px ;
+    text-align: left;
+}
+#check{
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: #F8F4E1;
+    border-radius: 10px;
+}
+/*option*/
+.options{
+    margin-left: 5px ;
+    display: block;
+}
+#add_button{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.add_title{
+    width: 300px;
+    height: auto;
+
+}
+#option2{
+    margin-top: 20px;
+    padding-top: 30px;
+}
+input[type="text"] {
+    width: 95%;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 25px;
+}
+input[type="email"] {
+    width: 95%;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 25px;
+}
+/* Style placeholder text */
+input[type="text"]::placeholder {
+    color: #999;
+}
+.my_button{
+    margin: 8px 0 8px 0px;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #828080;
+    border-radius: 3px;
+}
+
+#add_gmail{
+    display: block;
+}
+
+#readOnlyText {
+    user-select: all; /* Cho phép người dùng chọn toàn bộ nội dung */
+    width: 95%;
+    height: 35px;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.close{
+    padding: 3px 6px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    margin-left: 400px ;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #828080;
+    border-radius: 3px;
+}
+
+.close a{
+    text-decoration: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm thành viên</title>
+    <link rel="stylesheet" href="/share.css">
+</head>
+<body>
+    <!-- Nội dung cụ thể của tính năng -->
+    <div id="check">
+        <div id="head">
+            <h1>Thêm thành viên mới cho dự án</h1>
+        </div>
+        <div id="add">
+            <h4>Hãy chọn cách thêm thành viên</h4>
+        </div>
+        <div class="options">
+            <div class="option1">
+                <div id="add_button">
+                    <label for="option1">Thêm thành viên trực tiếp bằng gmail</label>
+                </div>
+                <p class="add_title">Thêm thành viên sử dụng chung bảng của bạn bàng cách gửi lời mời cho họ qua gmail</p>
+                <div id="add_gmail" class="add_gmail">
+                    <form id="emailForm" class="hidden">
+                        <div>                        
+                            <label for="email"><input type="email" id="email" name="email" placeholder="Nhập gmail vào đây...">
+                        </div>
+                    <div><button type="submit" class="my_button">Thêm</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="option2"> 
+                <div id="add_button">
+                    <label for="option2">Thêm thành viên qua link</label>
+                </div>
+                <div id="share_link" class="share_link">
+                    <input type="text" id="readOnlyText" value="http://127.0.0.1:5500/Base.html" readonly>
+                </div>
+            </div>       
+        </div>
+        <div>
+            <button class="close"><a href="/Base.html">Đóng</a></button>
+        </div>        
+    </div>
+    <script src="/Base.js"></script>
+</body>
+</html>

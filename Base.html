@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quản lý công việc</title>
+    <link rel="stylesheet" href="/Base.css" />   
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <nav class="container">
+          <div id="head_left">
+            <a href="" class="logo">
+              <img src="./hinhanhTTCS/logo.png" atl="check">
+            </a>
+            <ul id="main-menu"><!---->
+            <li><a href="">Mẫu bảng</a>
+              <ul class="sub-mainmenu">
+                <li><a href="">Bảng ngang</a></li>
+                <!-- <li><a href="">Bảng dọc</a></li> -->
+                <li><a href="">Lịch</a></li>
+              </ul>
+            </li>
+            <li><a href="">Bảng gần đây</a> 
+              <ul class="sub-mainmenu">
+                <li><a href="">Bảng 1</a></li>
+                <li><a href="">Bảng 2</a></li>
+                <li><a href="">Bảng 3</a></li>
+              </ul>
+            </li>
+            <li><a href="">Đáng chú ý</a>
+              <ul class="sub-mainmenu">
+                <li><a href="">Lịch học</a></li>
+                <li><a href="">Lịch đi chơi</a></li>
+                <li><a href="">Hạn nộp bài</a></li>
+              </ul>
+            </li>
+            </ul>
+          </div>
+          <div id="head_right">
+            <ul id="option">
+              <li id="option1" class="option">Tùy chỉnh giao diện
+                <ul class="sub-option" id="sub-option">
+                  <p id="set-color">Hãy chọn màu nền cho giao diện</p>
+                  <div id="opc">
+                    <div id="color1">
+                      <li><button id="xanh" onclick="chuyenxanh()"></button></li>
+                      <li><button id="do" onclick="chuyendo()"></button></li>
+                      <li><button id="luc" onclick="chuyenluc()"></button></li>
+                      <li><button id="tim" onclick="chuyentim()"></button></li>
+                    </div>
+                    <div id="color2">
+                      <li><button id="vang" onclick="chuyenvang()"></buton></li>
+                      <li><button id="cam" onclick="chuyencam()"></buton></li>
+                      <li><button id="xam" onclick="chuyenxam()"></button></li>
+                      <li><button id="trang" onclick="chuyentrang()"></button></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li id="option2" class="option"><a href="Login.html">Đăng nhập/Đăng ký</a></li>
+            </ul>  
+          </div>  
+        </nav>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div id="sidebar1">
+        <h2 id="username">User name</h2>
+      </div>
+      <div id="sidebar2">
+        <div>
+          <a id="board" href="">
+            <img class="boardicon" src="./hinhanhTTCS/boardicon.png" alt="boardicon">
+            <p class="bang">Bảng</p>
+          </a>
+        </div>
+        <div>
+          <a id="add_member" href="share.html">
+            <img class="add_member" src="./hinhanhTTCS/menbericon.png" alt="add_member" >
+            <p class="add_newmem">Thêm thành viên</p>
+          </a>
+        </div>
+        <div>
+          <a id="settingboard" href="">
+            <img class="settingboard" src="./hinhanhTTCS/settingicon.png" alt="settingicon">
+            <p class="setting">Cài đặt bảng</p>
+          </a>
+        </div>
+      </div>
+      <div id="sidebar3">
+        <h2 id="tieudesidebar">Các dạng trình bày tổng quát</h2>
+        <div>
+          <a id="dangbang" href="">
+            <img class="dangbang" src="./hinhanhTTCS/boardicon.png" alt="add_member">
+            <p class="xembang">Dạng bảng</p>
+          </a>
+        </div>
+        <div>
+          <a id="danglich" href="">
+            <img class="danglich" src="./hinhanhTTCS/lichicon.png" alt="settingicon">
+            <p class="xemlich">Lịch</p>
+          </a>
+        </div>
+      </div>
+      <div id="sidebar4">
+                <h2 id="tieudelichtrinh">Lịch trình của bạn</h2>
+        <div id="lichtrinh">
+          <p class="lichtrinh"><a href="">Lịch học 1</a></p>
+          <p class="lichtrinh"><a href="">Lịch học 2</a></p>
+          <p class="lichtrinh"><a href="">Lịch nghỉ tết</a></p>
+        </div>     
+      </div>
+      <div id="sidebar5">
+        <h2 id="tieudebang">Các bảng của bạn</h2>
+        <ul class="bangcuaban">
+          <li class="bangdalam"><a href="">Bảng số 1</a></li>
+          <li class="bangdalam"><a href="">Bảng số 2</a></li>
+          <li class="bangdalam"><a href="">Bảng số 3</a></li>
+        </ul>
+      </div>
+    </div><!--sidebar-->   
+    <!-- <div id="content">
+    </div> -->
+    <div id="list">
+      <div id="add-list"><!--Thêm thẻ-->
+        <div id="cc1">
+          <div id="add-list1"><!--thẻ số 1-->
+          <div id="name-list1" style="display: none;">
+            <input type="text" id="add-text" placeholder="Nhập tiêu đề cho danh sách">
+            <div id="textTags1" class=" textTags1"></div>
+            <button onclick="createnewTag1()" id="newtag">Thêm thẻ</button>
+          </div>
+          <button class="add-list1" id="buttonadd1" onclick="createnewlist1()" style="display: block;">+ Thêm danh sách</button> 
+          </div>
+        </div>
+        <div id="cc2">
+          <div id="add-list2"><!--thẻ số 2-->
+            <div id="name-list2" style="display: none;">
+              <input type="text" id="add-text" placeholder="Nhập tiêu đề cho danh sách">
+              <div id="textTags2"></div>
+             <button onclick="createnewTag2()" id="newtag">Thêm thẻ</button>
+            </div>
+           <button class="add-list2" id="buttonadd2" onclick="createnewlist2()" style="display: block;">+ Thêm danh sách</button> 
+          </div>
+        </div>
+        <div id="cc3">
+          <div id="add-list3"><!--thẻ số 3-->
+            <div id="name-list3" style="display: none;">
+              <input type="text" id="add-text" placeholder="Nhập tiêu đề cho danh sách">
+              <div id="textTags3"></div>
+              <button onclick="createnewTag3()" id="newtag">Thêm thẻ</button>
+            </div>
+            <button class="add-list3" id="buttonadd3" onclick="createnewlist3()" style="display: block;">+ Thêm danh sách</button> 
+          </div>
+        </div>
+        <div id="cc4">
+          <div id="add-list4"><!--thẻ số 4-->
+            <div id="name-list4" style="display: none;">
+              <input type="text" id="add-text" placeholder="Nhập tiêu đề cho danh sách">
+              <div id="textTags4"></div>
+              <button onclick="createnewTag4()" id="newtag">Thêm thẻ</button>
+            </div>
+            <button class="add-list4" id="buttonadd4" onclick="createnewlist4()" style="display: block;">+ Thêm danh sách</button> 
+          </div>
+        </div>
+        <div id="cc5">
+          <div id="add-list5"><!--thẻ số 5-->
+            <div id="name-list5" style="display: none;">
+              <input type="text" id="add-text" placeholder="Nhập tiêu đề cho danh sách">
+              <div id="textTags5"></div>
+              <button onclick="createnewTag5()" id="newtag">Thêm thẻ</button>
+            </div>
+            <button class="add-list5" id="buttonadd5" onclick="createnewlist5()" style="display: block;">+ Thêm danh sách</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Base.js"></script>
+  </body>
+</html>
